@@ -43,7 +43,7 @@ class OBJECT_OT_auto_boolean(bpy.types.Operator):
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].operation = operation
         bpy.context.object.modifiers["Boolean"].object = obj2
-        bpy.ops.object.modifier_apply(modifier="Boolean")
+        # bpy.ops.object.modifier_apply(modifier="Boolean")
 
         return {'FINISHED'}
 
